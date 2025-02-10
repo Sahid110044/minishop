@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Home from './components/Home'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import {HashRouter as Router, BrowserRouter, Route, Routes } from 'react-router-dom'
 import Cart from './components/Cart.jsx'
 import Payloaditems from './components/Payloaditems.jsx'
 
@@ -20,7 +20,7 @@ function App() {
    {/* <Cart/> */}
 
 
-    <BrowserRouter basename='/minishop'>
+    <Router>
      <Header/>
 
      <Routes>
@@ -31,7 +31,7 @@ function App() {
 
 
      
-    </BrowserRouter>
+    </Router>
      
       
   </>
