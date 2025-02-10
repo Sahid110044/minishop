@@ -6,6 +6,7 @@ import Singlecart from './Singlecart';
 import { useDispatch, useSelector } from 'react-redux';
 
 import Mycategory from './Mycategory';
+import { addtocart } from '../Features/Counterslice';
 
 
 
@@ -63,7 +64,7 @@ function Cart() {
           if(!response) throw Error(`Shahid data is corrupted: ${response.status}`)
           const data = await response.json()
           setproduct(data)
-          dispatch(addtoitems(data))
+          dispatch(addtocart(data))
           localStorage.setItem("product",JSON.stringify(data));
           setloading(false)
         }
