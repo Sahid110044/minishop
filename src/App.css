@@ -1,0 +1,6 @@
+@media (max-width:790px) {
+    #payload{
+        width: 23rem !important;
+        flex-direction: column;
+    }
+}
