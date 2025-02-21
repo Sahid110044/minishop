@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Button,Alert } from 'react-bootstrap';
 import { useDispatch } from 'react-redux'
-import { sortingItem } from '../Features/Counterslice';
+import { sortingItem, searchItem } from '../Features/Counterslice';
 
 
 
